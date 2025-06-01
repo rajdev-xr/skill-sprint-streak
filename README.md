@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+# 🌟 SkillSprint — One Skill a Day, Every Day
 
-## Project info
+Welcome to **SkillSprint**, your micro-learning companion designed to help users build habits by completing daily skill challenges. From CSS tricks to Python snippets, users log in, complete the daily task, and track their progress with streaks, stats, and badges.
 
-**URL**: https://lovable.dev/projects/91011698-fe97-4133-81ad-0cac2ee7a6bf
+---
 
-## How can I edit this code?
+## 🚀 Live Demo
 
-There are several ways of editing your application.
+🌐 [Visit SkillSprint on Vercel](https://skill-sprint-streak.vercel.app/)  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/91011698-fe97-4133-81ad-0cac2ee7a6bf) and start prompting.
+## 🎯 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+### ✅ Core User Features
+- 🔐 Supabase Auth – Login/signup securely
+- 📅 Daily Skill Challenges – One bite-sized task per day
+- ☑️ Check-In System – Track your daily completion
+- 🔥 Streak Tracking – Auto-streaks + reward badges (3, 7, 30 days)
+- 🧑‍🎓 Profile Page – DiceBear avatars, streaks, badges
+- 📆 Calendar View – Visual monthly progress tracker
+- 💬 Daily Quotes – Inspirational quotes from public APIs (with fallback)
 
-**Use your preferred IDE**
+### 🔐 Admin Features
+- 🛠️ Admin Panel – Add/Edit/Delete challenges
+- 👑 Role-based Access – Only admins can manage content
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧱 Built With
 
-Follow these steps:
+- ⚙️ **Supabase** – Auth, Database, Admin Control
+- 💅 **Tailwind CSS** – Utility-first CSS
+- 🔧 **shadcn/ui** – Beautiful, accessible components
+- ⚛️ **React + Vite + TypeScript** – Lightning-fast frontend
+- 🎨 **DiceBear Avatars** – Unique avatars for each user
+- 📊 **Public APIs** – ZenQuotes.io (fallback-ready)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📁 Folder Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
+skillsprint/
+├── src/
+│ ├── components/
+│ ├── pages/
+│ └── lib/
+├── supabase/
+├── tailwind.config.ts
+├── README.md
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## 🛠️ Run Locally
+
+```bash
+git clone https://github.com/your-username/skillsprint.git
+cd skillsprint
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Create a .env file and add your Supabase project URL and anon/public key:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+env
+Copy
+Edit
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
+⚙️ Admin Setup
+To access the Admin Panel:
 
-**Use GitHub Codespaces**
+Go to your Supabase dashboard
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Find the user_roles table
 
-## What technologies are used for this project?
+Set a user’s role to 'admin'
 
-This project is built with:
+🏅 Badge System
+Streak Days	Badge
+3	🥉 Bronze
+7	🥈 Silver
+30	🥇 Gold
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+📣 Contribution & License
+This project was built using Lovable AI 
+Feel free to fork or reuse the code for your own portfolio!
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/91011698-fe97-4133-81ad-0cac2ee7a6bf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🪪 MIT License
+💌 Built by ROHAN RAJ
